@@ -1,9 +1,9 @@
 Name: YOUR NAME HERE
 
-| Date    |  Time  |                                     Update |
-|:--------|:------:|-------------------------------------------:|
-| April 5 | 9-10pm | I tried to write abstract, efficient code. |
-|         |        |                                            |
+| Date   |     Time      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Update |
+|:-------|:-------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Nov 13 | 1:25pm-1:45pm |                  I copied the code from BlickCompressor into our compressor. I had to modify the bits per char to be 2 because we only need to represent for chars for each distinct nucleotide. Also, instead of having a string as a target, the nucleotides were targets so at each letter, it would be compressed to it's two bit version. To do this I looped through the genome and at each nucleotide I compressed it into the comp bin. This all worked except that the last few chars were zeros that were not part of the genome. |
+| Nov 17 | 11:35-11:50pm | Mr. Blick explained to us why our expanded texts had extra chars. This was because the text file size has to be a multiple of for because of the bytes and that automatically it will fill the rest will zeros which explains the extra As. I solved this problem by writing the size of the genome in the compressed bin and transferring it out as metadata. Then, I just read the original length of the genome when I expanded the genome. This ensured that I was only taking the data length of data without the extra 0s at the end. |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.
